@@ -8,7 +8,7 @@ console.log(`El destino del viaje es ${destinoViaje}`)
 //Pregunta la duración del viaje y comprueba si es un valor numérico
 let duracionViaje = prompt("¿Cuantos días va a durar tu viaje?")
 
-while(isNaN(parseInt(duracionViaje)) === true){  
+while(isNaN(parseInt(duracionViaje))){  
     console.warn("El valor ingresado no es numérico")
     duracionViaje = prompt("Por favor, ingresa un solo números")   
 }
@@ -19,7 +19,7 @@ console.log(`La duración del viaje serán ${duracionViaje} días`)
 //Pregunta el presupuesto del viaje y comprueba si es un valor numérico
 let presupuestoViaje = prompt("¿Cuál es tu presupuesto inicial?")
 
-while(isNaN(parseInt(presupuestoViaje)) === true){
+while(isNaN(parseInt(presupuestoViaje))){
     console.warn("El valor ingresado no es numérico")  
     presupuestoViaje = prompt("Por favor, ingresa un solo números ")
     
@@ -31,7 +31,7 @@ console.log(`El presupuesto inicial de Julián es de $${presupuestoViaje}`)
 //Pregunta el estimadio diario del viaje y comprueba si es un valor numérico
 let estimadoDiario = prompt("Define un estimado de presupuesto diario")
 
-while(isNaN(parseInt(estimadoDiario)) === true){
+while(isNaN(parseInt(estimadoDiario))){
     console.warn("El valor ingresado no es numérico")
     estimadoDiario = prompt("Por favor, ingresa un solo números")    
 }      
