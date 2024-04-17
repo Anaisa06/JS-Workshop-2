@@ -21,7 +21,7 @@ let presupuestoViaje = prompt("¿Cuál es tu presupuesto inicial?")
 
 while(isNaN(parseInt(presupuestoViaje)) === true){
     console.warn("El valor ingresado no es numérico")  
-    presupuestoViaje = prompt("Por favor, ingresa un solo números")
+    presupuestoViaje = prompt("Por favor, ingresa un solo números ")
     
 }
 
