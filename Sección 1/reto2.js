@@ -51,9 +51,9 @@ while(nuevoSouvenir === "1"){
       
 
     const souvenir = {
-        "nombre": nombreSouv, 
-        "precio" : `$${precioSouvNum}`, 
-        "disponibilidad" : disponibilidadSouv
+        nombre: nombreSouv, 
+        precio : `$${precioSouvNum}`, 
+        disponibilidad : disponibilidadSouv
     }
 
     listaSouvenirs.push(souvenir)
