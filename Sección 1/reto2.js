@@ -1,17 +1,9 @@
 //Tipos de souvenirs
 
+//Función para verificar si el valor ingresado es un número
+import verificarNumero from "./functions.js"
+
 let listaSouvenirs = []
-
-
-//Función para verificar si el valor ingresado es un número o no
-function verificarNumero (variable){
-    while(isNaN(variable)){
-        console.warn("El valor ingresado no es un número")
-        variable = prompt("Por favor, ingresa solo números")
-    }
-    variable = parseFloat(variable)
-    return variable   
-}
 
 
 //Función para verificar la disponibilidad
@@ -25,11 +17,11 @@ function verificarDisponibilidad (variable){
 }
 
 //Pregunta al usuario si quiere añadir un nuevo souvenir
-let nuevoSouvenir = prompt("¿Quieres añadir un nuevo souvenir? Presiona 1 para si, otra tecla para salir")
+let nuevoSouvenir = confirm("¿Quieres añadir un nuevo souvenir?")
 console.log(nuevoSouvenir)
 
 //Ciclo para añadir nuevos souvenirs hasta que el usuario decida lo contrario
-while(nuevoSouvenir === "1"){
+while(nuevoSouvenir){
 
     //Pregunta el nombre del artículo
     let nombreSouv = prompt("Ingresa el nombre de souvenir")
@@ -58,7 +50,7 @@ while(nuevoSouvenir === "1"){
 
     listaSouvenirs.push(souvenir)
 
-    nuevoSouvenir = prompt("¿Quieres añadir un nuevo souvenir? Presiona 1 para si, otra tecla para salir")    
+    nuevoSouvenir = confirm("¿Quieres añadir un nuevo souvenir?")    
 
 }
 
